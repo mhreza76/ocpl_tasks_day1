@@ -9,7 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Simple Form</title>
 </head>
@@ -18,8 +18,9 @@
 
   <div class="container">
     <form action="#">
+      
       <div class="card card-info mt-5">
-        <div class="card-header ">Basic Informatio</div>
+        <div class="card-header  bg-info text-white">Basic Informatio</div>
         <!-- <h5 class="card-header card-info"></h5> -->
         <div class="card-body">
           <fieldset class="border p-2">
@@ -31,26 +32,26 @@
                 <div class="row pb-1">
                   <label for="division" class="col-sm-4 col-form-label">Division</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="division" name="division" value="Dhaka">
+                    <input type="text" class="form-control" id="division" name="division" value="" placeholder="Dhaka">
                   </div>
                 </div>
                 <div class="row pb-1">
                   <label for="police_station" class="col-sm-4 col-form-label">Police Station</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="police_station" name="police_station"
-                      value="Uttara West">
+                    <input type="text" class="form-control" id="police_station" name="police_station" value=""
+                      placeholder="Uttara West">
                   </div>
                 </div>
                 <div class="row pb-1">
                   <label for="post_code" class="col-sm-4 col-form-label">Post Code</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="post_code" name="post_code" value="1230">
+                    <input type="number" class="form-control" id="post_code" name="post_code" value="" placeholder=1230>
                   </div>
                 </div>
                 <div class="row pb-1">
                   <label for="telephone_number" class="col-sm-4 col-form-label">Telephone No</label>
                   <div class="col-sm-8">
-                    <input type="number" readonly class="form-control" id="telephone_number" name="telephone_number"
+                    <input type="number" class="form-control" id="telephone_number" name="telephone_number"
                       placeholder="01611211563" value="">
                   </div>
                 </div>
@@ -59,19 +60,21 @@
                 <div class="row pb-1">
                   <label for="district" class="col-sm-4 col-form-label">District</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="district" name="district" value="Dhaka">
+                    <input type="text" class="form-control" id="district" name="district" value=""
+                      placeholder="Naogaon">
                   </div>
                 </div>
                 <div class="row pb-1">
                   <label for="post_office" class="col-sm-4 col-form-label">Post Office</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="post_office" name="post_office" value="1230">
+                    <input type="text" class="form-control" id="post_office" name="post_office" value=""
+                      placeholder="6540">
                   </div>
                 </div>
                 <div class="row pb-1">
                   <label for="house_flat_road" class="col-sm-4 col-form-label">House, Flat, Road</label>
                   <div class="col-sm-8">
-                    <input type="text" readonly class="form-control" id="house_flat_road" name="house_flat_road"
+                    <input type="text" class="form-control" id="house_flat_road" name="house_flat_road"
                       placeholder="House, Flat, Road" value="">
                   </div>
                 </div>
@@ -79,8 +82,8 @@
                 <div class="row pb-1">
                   <label for="email" class="col-sm-4 col-form-label">Email</label>
                   <div class="col-sm-8">
-                    <input type="email" readonly class="form-control" id="email" name="email"
-                      placeholder="test@testmail.com" value="">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="test@testmail.com"
+                      value="">
                   </div>
                 </div>
               </div>
@@ -92,16 +95,16 @@
       </div>
 
       <div class="card card-info mt-5">
-        <div class="card-header ">Previous Travel history of the expatriate to Bangladesh</div>
+        <div class="card-header  bg-info text-white">Previous Travel history of the expatriate to Bangladesh</div>
 
         <fieldset class="form-group row">
           <div class="col-sm-6">
 
-            <lable class="col-form-label col-sm-8 float-sm-left pt-0">Have you visited to Bangladesh previously? <font
+            <lable class="col-form-label col-sm-8 float-sm-left mt-2">Have you visited to Bangladesh previously? <font
                 color="red">* </font>
             </lable>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 mt-3">
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
               <label class="form-check-label" for="inlineRadio1">Yes</label>
@@ -112,7 +115,7 @@
             </div>
           </div>
         </fieldset>
-        <div class="card-body">
+        <div class="card-body mt-n4">
           <fieldset class="border p-2">
             <legend class="w-auto">In which period:</legend>
 
@@ -127,8 +130,8 @@
               <div class="col-sm-3 card ml-2">
                 <div class="card-header text-center">End date</div>
                 <div class="card-body text-info">
-                  <input class="form-check-input  mx-auto" type="date" name="end_date" id="end_date"
-                    value="08-Jul-2021" placeholder="08-Jul-2021" style="width: 200px;">
+                  <input class="form-check-input  mx-auto" type="date" name="end_date" id="end_date" value="08-Jul-2021"
+                    placeholder="08-Jul-2021" style="width: 200px;">
                 </div>
               </div>
               <div class="col-sm-3 card ml-2">
@@ -147,13 +150,100 @@
               <div class="col-sm-1  card ml-2">
                 <div class="card-header text-center">#</div>
                 <div class="card-body text-info pl-1">
-                  <button class="btn"><i class="fa fa-plus"></i></button>
+                  <button class="btn-plus"><i class="fa fa-plus"></i></button>
                 </div>
               </div>
             </div>
           </fieldset>
         </div>
       </div>
+
+      <div class="card card-info mt-5 mb-2 pb-5">
+        <div class="card-header bg-info text-white ">Service Fee Payment</div>
+
+        <div class="row m-1 pt-2">
+          <div class="col">
+
+            <div class="row pb-1">
+              <label for="contact_name" class="col-sm-4 col-form-label">Contact name <font color="red">* </font></label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" id="contact_name" name="contact_name" value=""
+                  placeholder="Reza">
+              </div>
+            </div>
+            <div class="row pb-1">
+              <label for="contact_phone" class="col-sm-4 col-form-label">Contact phone <font color="red">* </font></label>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="contact_phone" name="contact_phone"
+                  placeholder="01611211563" value="">
+              </div>
+            </div>
+            <div class="row pb-1">
+              <label for="pay_amount" class="col-sm-4 col-form-label">Pay amount</label>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="pay_amount" name="pay_amount" value="" placeholder=250>
+              </div>
+            </div>
+            <div class="row pb-1">
+              <label for="total_amount" class="col-sm-4 col-form-label">Total amount</label>
+              <div class="col-sm-8">
+                <input type="number" class="form-control" id="post_code" name="total_amount" class="form-control"
+                  id="total_amount" name="total_amount" value="" placeholder="250.00">
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="row pb-1">
+              <label for="contact_email" class="col-sm-4 col-form-label">Contact email <font color="red">* </font></label>
+              <div class="col-sm-8">
+                <input type="text"  class="form-control" id="contact_email" name="contact_email" value="" placeholder="rezabaiust@gmail.com">
+              </div>
+            </div>
+            <div class="row pb-1">
+              <label for="contact_address" class="col-sm-4 col-form-label">Contact address <font color="red">* </font></label>
+              <div class="col-sm-8">
+                <input type="text"  class="form-control" id="contact_address" name="contact_address" value="" placeholder="Dhaka">
+              </div>
+            </div>
+            <div class="row pb-1">
+              <label for="vat_on_pay_amount" class="col-sm-4 col-form-label">VAT on pay amount</label>
+              <div class="col-sm-8">
+                <input type="number"  class="form-control" id="vat_on_pay_amount" name="vat_on_pay_amount"
+                  placeholder="0" value="">
+              </div>
+            </div>
+
+            <div class="row pb-1">
+              <label for="payment_status" class="col-sm-4 col-form-label">Payment Status</label>
+              <div class="col-sm-4">
+                <input type="text" disabled  class="form-control bg-warning text-white text-center" id="payment_status" name="payment_status"
+                  placeholder="" value="Not Paid">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-danger m-3" role="alert">
+          <b>Vat/Tax</b> and <b>Transection Charge </b>is a approximate amount, those may vary based on the Sonali Bank system and those will be visible here after payment submission.
+        </div>
+      </div>
+
+     
+
+
+      <!-- sample card  -->
+      <!-- <div class="card card-info mt-5">
+        <div class="card-header  bg-info text-white">Previous Travel history of the expatriate to Bangladesh</div>
+
+        <fieldset class="form-group row">
+          <div class="col-sm-6">
+
+            <lable class="col-form-label col-sm-8 float-sm-left pt-0">Have you visited to Bangladesh previously? <font
+                color="red">* </font>
+            </lable>
+          </div>
+        </fieldset>
+      </div> -->
 
     </form>
   </div>
