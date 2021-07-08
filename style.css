@@ -9,3 +9,16 @@ legend.scheduler-border {
     border: none;
     font-size: 14px;
 }
+.datetimepicker1{
+    width: 300px !important;
+  }
+
+  .btn {
+    background-color: DodgerBlue !important; /* Blue background */
+    border: none; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
